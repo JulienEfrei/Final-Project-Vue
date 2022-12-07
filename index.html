@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>Vue Mastery</title>
-    <!-- Import Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
-    <!-- Import Vue.js -->
     <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
   </head>
   <body>
     <div id="app">
-      <div class="nav-bar"></div>
-
-      <div class="cart">
-        <p>Cart({{ cart.length }})</p>
+      <div class="nav-bar">
+        <p>Invictus</p>
+        <div class="cart">
+          <p>Cart({{ cart.length }})</p>
+        </div>
       </div>
+
       <product-display
         :premium="premium"
         @add-to-cart="updateCart"
@@ -31,7 +31,7 @@
 
     <!-- Mount App -->
     <script>
-      app.mount('#app')
+      app.mount("#app");
     </script>
   </body>
 </html>
